@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: #068601;">
-  <a class="navbar-brand" href="#">Tour Package Booking</a>
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark" style="background-color: #959494;">
+  <a class="navbar-brand mb-0 h1" href="#">Tour Package Booking</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -10,11 +10,20 @@
         <%= link_to "Home",root_path, :class=>"nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Contact",contact_path, :class=>"nav-link" %>
+        <%= link_to "Tour Packages","#", :class=>"nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Help",help_path, :class=>"nav-link" %>
+        <%= link_to "Cruise","#", :class=>"nav-link" %>
       </li>
+      <li class="nav-item">
+        <%= link_to "Air Tickets","#", :class=>"nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Visa","#", :class=>"nav-link" %>
+      </li>
+    </ul>
+	
+    <ul class="navbar-nav ml-auto pr-5">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown
@@ -27,12 +36,11 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <%= link_to "Contact",contact_path, :class=>"nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Help",help_path, :class=>"nav-link" %>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
